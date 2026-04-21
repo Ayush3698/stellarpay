@@ -39,7 +39,7 @@ Built for the **Stellar White Belt Level 1** challenge.
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/stellarpay.git
+git clone https://github.com/Ayush3698/stellarpay
 cd stellarpay
 
 # 2. Install dependencies
@@ -114,3 +114,24 @@ stellarpay/
 ## License
 
 MIT
+
+
+
+
+<img width="1907" height="800" alt="image" src="https://github.com/user-attachments/assets/5a4a238e-5b48-4d79-8c8e-009eff8bd8ef" />
+
+
+<img width="1380" height="956" alt="image" src="https://github.com/user-attachments/assets/08ba15d3-4458-4ad2-a4d4-696976e07499" />
+
+
+
+<img width="671" height="577" alt="image" src="https://github.com/user-attachments/assets/de5b14d6-5157-4a6b-8d1a-5056726f87e3" />
+
+
+<img width="652" height="972" alt="image" src="https://github.com/user-attachments/assets/959f1837-6ba2-460d-8e2a-fcf0b13725f3" />
+
+
+<img width="1122" height="957" alt="image" src="https://github.com/user-attachments/assets/72652d80-33ba-4cce-b873-d92985ae9055" />
+
+
+<img width="724" height="615" alt="image" src="https://github.com/user-attachments/assets/3d089970-9879-4cee-a838-10bac6fa3c1b" />
