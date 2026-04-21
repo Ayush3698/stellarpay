@@ -1,0 +1,276 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 1rem 4rem;
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(61,142,240,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 80%, rgba(26,58,107,0.12) 0%, transparent 60%),
+    var(--bg);
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* ── Header ── */
+.header { text-align: center; padding: 1.5rem 0 2rem; }
+.logoRow { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 0.75rem; }
+.logoIcon {
+  width: 38px; height: 38px;
+  background: linear-gradient(135deg, #3d8ef0, #1a3a6b);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; color: #fff;
+}
+.logoText {
+  font-family: var(--font-display);
+  font-size: 1.3rem; color: var(--stellar-glow);
+  letter-spacing: 0.05em;
+}
+.testnetBadge {
+  display: inline-block;
+  background: rgba(240,160,48,0.12);
+  border: 1px solid rgba(240,160,48,0.35);
+  color: var(--stellar-gold);
+  font-size: 0.7rem; font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.9rem;
+  border-radius: 20px;
+  margin-bottom: 0.65rem;
+}
+.tagline {
+  font-size: 0.8rem; color: var(--muted);
+  letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500;
+}
+
+/* ── Card ── */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ── Connect ── */
+.connectBox { text-align: center; padding: 1.5rem 0.5rem; }
+.connectIcon {
+  width: 72px; height: 72px;
+  background: linear-gradient(135deg, rgba(61,142,240,0.14), rgba(26,58,107,0.3));
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 30px; color: var(--stellar-glow);
+  margin: 0 auto 1.25rem;
+}
+.connectTitle {
+  font-family: var(--font-display);
+  font-size: 1rem; margin-bottom: 0.6rem;
+}
+.connectSub {
+  font-size: 0.88rem; color: var(--muted); line-height: 1.7;
+  max-width: 320px; margin: 0 auto 1.5rem;
+}
+.errorBox {
+  background: rgba(232,93,93,0.1);
+  border: 1px solid rgba(232,93,93,0.3);
+  color: var(--error);
+  font-size: 0.83rem; padding: 0.75rem 1rem;
+  border-radius: 8px; margin-bottom: 1.2rem; text-align: left;
+}
+.hint { font-size: 0.8rem; color: var(--muted); margin-top: 1.1rem; }
+.link { color: var(--stellar-glow); text-decoration: none; }
+.link:hover { text-decoration: underline; }
+
+/* ── Wallet bar ── */
+.walletRow { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.liveRow {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 0.78rem; color: var(--success); font-weight: 600; margin-bottom: 4px;
+}
+.dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--success);
+  box-shadow: 0 0 6px var(--success);
+  animation: pulse 2s infinite;
+  display: inline-block;
+}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+.walletAddr {
+  font-family: var(--font-display);
+  font-size: 0.74rem; color: var(--stellar-glow);
+}
+.walletBtns { display: flex; gap: 0.5rem; }
+
+/* ── Balance ── */
+.balanceHeader {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+.sectionLabel {
+  font-size: 0.7rem; text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--muted); font-weight: 600;
+}
+.balanceDisplay { text-align: center; padding: 1.25rem 0 0.5rem; }
+.balAmount {
+  font-family: var(--font-display);
+  font-size: 2.5rem; color: var(--text);
+}
+.balUnit {
+  font-family: var(--font-display);
+  font-size: 1rem; color: var(--muted); margin-left: 8px;
+}
+.usdEst { text-align: center; font-size: 0.8rem; color: var(--muted); margin-bottom: 0.75rem; }
+.divider { height: 1px; background: var(--border); margin: 0.75rem 0; }
+.infoRow { display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; }
+.muted { color: var(--muted); }
+.goldBadge {
+  font-size: 0.72rem; font-weight: 600;
+  color: var(--stellar-gold);
+  background: rgba(240,160,48,0.1);
+  border: 1px solid rgba(240,160,48,0.25);
+  padding: 0.2rem 0.65rem; border-radius: 20px;
+}
+
+/* ── Form ── */
+.fieldLabel {
+  display: block;
+  font-size: 0.72rem; text-transform: uppercase;
+  letter-spacing: 0.08em; color: var(--muted);
+  font-weight: 600; margin: 1rem 0 0.45rem;
+}
+.input {
+  width: 100%;
+  background: var(--card2);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 0.78rem 1rem;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.input:focus { border-color: var(--stellar-glow); }
+.input::placeholder { color: var(--muted); }
+
+/* ── Buttons ── */
+.btnPrimary {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  width: 100%; max-width: 300px;
+  padding: 0.85rem 1.5rem;
+  background: linear-gradient(135deg, var(--stellar-glow), #1a5ec4);
+  color: #fff; border: none; border-radius: 10px;
+  font-family: var(--font-body); font-size: 0.95rem; font-weight: 600;
+  cursor: pointer; transition: opacity 0.2s, transform 0.15s;
+}
+.btnPrimary:hover:not(:disabled) { opacity: 0.88; transform: translateY(-1px); }
+.btnPrimary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btnSend {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  width: 100%; margin-top: 1.25rem;
+  padding: 0.9rem;
+  background: linear-gradient(135deg, #22c984, #0e9e64);
+  color: #fff; border: none; border-radius: 10px;
+  font-family: var(--font-body); font-size: 0.95rem; font-weight: 600;
+  cursor: pointer; transition: opacity 0.2s, transform 0.15s;
+}
+.btnSend:hover:not(:disabled) { opacity: 0.88; transform: translateY(-1px); }
+.btnSend:disabled { opacity: 0.45; cursor: not-allowed; }
+
+.friendbotBtn {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  width: 100%; margin-top: 1rem;
+  padding: 0.72rem;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  font-family: var(--font-body); font-size: 0.85rem; font-weight: 500;
+  cursor: pointer; transition: border-color 0.2s, color 0.2s;
+}
+.friendbotBtn:hover:not(:disabled) { border-color: var(--stellar-glow); color: var(--text); }
+.friendbotBtn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btnIcon {
+  background: transparent; border: 1px solid var(--border);
+  color: var(--muted); border-radius: 7px;
+  padding: 0.45rem 0.85rem; font-size: 0.78rem; cursor: pointer;
+  font-family: var(--font-body); transition: border-color 0.15s, color 0.15s;
+}
+.btnIcon:hover { border-color: var(--stellar-glow); color: var(--text); }
+
+.btnDanger {
+  background: transparent; border: 1px solid rgba(232,93,93,0.3);
+  color: var(--error); border-radius: 7px;
+  padding: 0.45rem 0.85rem; font-size: 0.78rem; cursor: pointer;
+  font-family: var(--font-body); transition: background 0.15s;
+}
+.btnDanger:hover { background: rgba(232,93,93,0.08); }
+
+.refreshBtn {
+  background: transparent; border: 1px solid var(--border);
+  color: var(--muted); border-radius: 7px;
+  padding: 0.3rem 0.65rem; font-size: 1rem; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: color 0.15s;
+}
+.refreshBtn:hover { color: var(--stellar-glow); }
+
+/* ── Spinners ── */
+.spinner {
+  width: 16px; height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  display: inline-block;
+}
+.spinnerSm {
+  width: 13px; height: 13px;
+  border: 2px solid rgba(255,255,255,0.25);
+  border-top-color: var(--muted);
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  display: inline-block;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Toast ── */
+.toast {
+  display: flex; align-items: flex-start; gap: 0.75rem;
+  padding: 1rem 1.1rem;
+  border-radius: 12px;
+  font-size: 0.85rem; line-height: 1.5;
+  animation: fadeUp 0.3s ease;
+  position: relative;
+}
+.toastSuccess {
+  background: rgba(34,201,132,0.1);
+  border: 1px solid rgba(34,201,132,0.3);
+  color: var(--success);
+}
+.toastError {
+  background: rgba(232,93,93,0.1);
+  border: 1px solid rgba(232,93,93,0.3);
+  color: var(--error);
+}
+.toastIcon { font-size: 1rem; margin-top: 1px; flex-shrink: 0; }
+.toastDetail { opacity: 0.85; margin-top: 2px; }
+.txLink {
+  display: block; margin-top: 5px;
+  font-family: var(--font-display);
+  font-size: 0.7rem; color: var(--stellar-glow);
+  text-decoration: underline; word-break: break-all;
+}
+.toastClose {
+  position: absolute; top: 0.75rem; right: 0.85rem;
+  background: none; border: none; color: inherit;
+  opacity: 0.5; cursor: pointer; font-size: 0.75rem;
+}
+.toastClose:hover { opacity: 1; }
+@keyframes fadeUp { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
